@@ -63,7 +63,7 @@ const render = debounce(renderThis, renderDelay);
 function init() {
   source = document.querySelector("script[type='x-shader/x-fragment']");
 
-  document.title = "🥚";
+  // document.title = "🥚";
 
   renderer = new Renderer(canvas, dpr);
   pointers = new PointerHandler(canvas, dpr);
