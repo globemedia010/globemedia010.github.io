@@ -41,6 +41,10 @@ canvas,
   grid-column: 1;
 }
 
+#controls {
+  display: none;
+}
+
 canvas {
   width: 100%;
   height: auto;
