@@ -16,21 +16,21 @@ function resize() {
     renderer.updateScale(dpr);
   }
 }
-function toggleView() {
-  editor.hidden = btnToggleView.checked;
-}
-function reset() {
-  let shader = source;
-  editor.text = shader ? shader.textContent : renderer.defaultSource;
-  store.putShaderSource(shaderId, editor.text);
-  renderThis();
-}
-function toggleResolution() {
-  resolution = btnToggleResolution.checked ? 0.5 : 1;
-  dpr = Math.max(1, resolution * window.devicePixelRatio);
-  pointers.updateScale(dpr);
-  resize();
-}
+// function toggleView() {
+//   editor.hidden = btnToggleView.checked;
+// }
+// function reset() {
+//   let shader = source;
+//   editor.text = shader ? shader.textContent : renderer.defaultSource;
+//   store.putShaderSource(shaderId, editor.text);
+//   renderThis();
+// }
+// function toggleResolution() {
+//   resolution = btnToggleResolution.checked ? 0.5 : 1;
+//   dpr = Math.max(1, resolution * window.devicePixelRatio);
+//   pointers.updateScale(dpr);
+//   resize();
+// }
 function loop(now) {
   renderer.updateMouse(pointers.first);
   renderer.updatePointerCount(pointers.count);
@@ -73,14 +73,14 @@ function init() {
   renderer.setup();
   renderer.init();
 
-  if (!editMode) {
-    btnToggleView.checked = true;
-    toggleView();
-  }
-  if (resolution === 0.5) {
-    btnToggleResolution.checked = true;
-    toggleResolution();
-  }
+  // if (!editMode) {
+  //   btnToggleView.checked = true;
+  //   toggleView();
+  // }
+  // if (resolution === 0.5) {
+  //   btnToggleResolution.checked = true;
+  //   toggleResolution();
+  // }
   canvas.addEventListener("shader-error", (e) => editor.setError(e.detail));
 
   resize();
@@ -93,8 +93,8 @@ function init() {
   window.addEventListener("keydown", (e) => {
     if (e.key === "L" && e.ctrlKey) {
       e.preventDefault();
-      btnToggleView.checked = !btnToggleView.checked;
-      toggleView();
+      // btnToggleView.checked = !btnToggleView.checked;
+      // toggleView();
     }
   });
 }
@@ -116,7 +116,7 @@ class Renderer {
     return this.#fragmtSrc;
   }
   updateShader(source) {
-    this.reset();
+    // this.reset();
     this.shaderSource = source;
     this.setup();
     this.init();
