@@ -41,10 +41,6 @@ canvas,
   grid-column: 1;
 }
 
-#controls {
-  display: none;
-}
-
 canvas {
   width: 100%;
   height: auto;
@@ -58,17 +54,6 @@ canvas {
 #error {
   background: repeating-linear-gradient(0deg, #000a, #1119, #000a .25rem);
   padding: 1em;
-}
-
-.editor {
-  color: #fefefe;
-  tab-size: 2;
-  border: none;
-  resize: none;
-}
-
-.editor:focus {
-  outline: none;
 }
 
 #error {
@@ -111,8 +96,9 @@ canvas {
 
 #controls {
   position: fixed;
-  top: 1em;
+  top: 4em;
   right: 2em;
+  display: none;
 }
 
 .controls {
@@ -226,4 +212,114 @@ input:hover {
 
 #btnReset::after {
   content: '⏮️';
+}
+
+
+
+/* HEADER */
+body > .header {
+  width: inherit;
+  height: 40px;
+  background: #1111;
+  box-shadow: 0px 1px 7px #3f3f3f;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  font-family: Arial;
+  z-index: 3;
+}
+
+body > .header {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER - SECTION CONTAINER*/
+body > .header .section-container {
+  width: 100%;
+  height: inherit;
+  margin: auto;
+  z-index: 1;
+}
+
+
+/* HEADER -SECTION CONTAINER - a */
+body > .header .section-container a {
+  width: 40px;
+  height: inherit;
+  margin: auto;
+  padding: 0px;
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  overflow: hidden;
+}
+
+body > .header .section-container.selected a {
+  border-bottom: 1px solid #000;
+}
+
+/* a CONTENT ::BEFORE */
+body > .header .section-container a.icon::before {
+  width: inherit;
+  height: inherit;
+  background-size: 70%;
+  position: relative;
+}
+
+body > .header .section-container a.icon.contact::before {
+  background-size: 75%;
+}
+
+
+/* SECTION CONTAINER - MENU */
+body > .header .section-container .menu {
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  position: absolute;
+  right: 0px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 5px 7px #35393b;
+  display: flex;
+}
+
+body > .header .section-container.contact .menu {
+  opacity: 0;
+}
+
+body > .header .section-container.contact .menu.show {
+  opacity: 1;
+}
+
+body > .header .section-container .menu span {
+  width: fit-content;
+  height: fit-content;
+  background: transparent;
+  position: relative;
+  margin: auto;
 }
