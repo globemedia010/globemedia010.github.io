@@ -2,7 +2,7 @@ let editMode = false; // set to false to hide the code editor on load
 let resolution = 1; // set 1 for full resolution or to .5 to start with half resolution on load
 let renderDelay = 1000; // delay in ms before rendering the shader after a change
 let dpr = Math.max(1, resolution * window.devicePixelRatio);
-let frm, source, store, renderer, pointers;
+let frm, store, renderer, pointers;
 const shaderId = "It Is All Just a Reflection";
 window.onload = init; 
 
