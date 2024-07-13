@@ -2,9 +2,9 @@ let editMode = false; // set to false to hide the code editor on load
 let resolution = 1; // set 1 for full resolution or to .5 to start with half resolution on load
 let renderDelay = 1000; // delay in ms before rendering the shader after a change
 let dpr = Math.max(1, resolution * window.devicePixelRatio);
-let frm, editor, store, renderer, pointers;
+let frm, source, store, renderer, pointers;
 const shaderId = "It Is All Just a Reflection";
-window.onload = init;
+window.onload = init; 
 
 function resize() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -63,13 +63,10 @@ const render = debounce(renderThis, renderDelay);
 function init() {
   source = document.querySelector("script[type='x-shader/x-fragment']");
 
-  // document.title = "🥚";
-
   renderer = new Renderer(canvas, dpr);
   pointers = new PointerHandler(canvas, dpr);
   store = new Store(window.location);
   editor = new Editor(codeEditor, error, indicator);
-  editor.text = source.textContent;
   renderer.setup();
   renderer.init();
 
@@ -81,7 +78,7 @@ function init() {
     btnToggleResolution.checked = true;
     toggleResolution();
   }
-  canvas.addEventListener("shader-error", (e) => editor.setError(e.detail));
+  // canvas.addEventListener("shader-error", (e) => editor.setError(e.detail));
 
   resize();
 
@@ -476,6 +473,9 @@ class Editor {
       this.#indentAtCursor();
     }
   }
+  
+  
+  // Hello  
   #getSelectedText() {
     const editor = this.textarea;
     const start = editor.selectionStart;
@@ -548,3 +548,27 @@ class Editor {
       editor.scrollTop = lineBottom - editor.clientHeight;
   }
 }
+
+
+
+
+// TOGGLE MENU
+function toggleEmailMenu() {
+  var home = $('.home.section-container '),
+      about = $('.about.section-container '),
+      yc = $('.yc.section-container '),
+      invest = $('.invest.section-container '),
+      contact = $('.contact.section-container a.contact');
+  $('.contact.section-container a.contact').on('click', function() {
+    $('.contact.section-container .menu').toggleClass('show');
+    $('.contact.section-container').toggleClass('selected');
+  })
+  
+  
+  $('div.content').on('click', function() {
+    if ($('.contact.section-container .menu').hasClass('show')) {
+      $('.contact.section-container .menu').removeClass('show');
+    }
+  })
+}
+toggleEmailMenu();
