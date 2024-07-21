@@ -280,7 +280,7 @@ body > .header .section-container a {
 }
 
 body > .header .section-container.selected a {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
 }
 
 /* a CONTENT ::BEFORE */
