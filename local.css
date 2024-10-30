@@ -297,7 +297,7 @@ body > .header .section-container a.icon.contact::before {
 body > .header .section-container .menu {
   width: 200px;
   height: auto;
-  background: transparent;
+  background: white;
   position: absolute;
   right: 0px;
   border-radius: 0px 0px 5px 5px;
@@ -319,4 +319,5 @@ body > .header .section-container .menu span {
   background: transparent;
   position: relative;
   margin: auto;
+  padding: 10px;
 }
