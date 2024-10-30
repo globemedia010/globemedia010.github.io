@@ -302,7 +302,7 @@ body > .header .section-container .menu {
   right: 0px;
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0px 5px 7px #35393b;
-  display: flex;
+  display: grid;
 }
 
 body > .header .section-container.contact .menu {
