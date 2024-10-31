@@ -143,6 +143,7 @@ nav {
   background: radial-gradient(black, transparent);
   background: black;
 /*   background: radial-gradient(#fbfbfb, transparent); */
+  background: radial-gradient(#161616, transparent);
   position: fixed;
   left: 0;
   top: 0;
