@@ -178,6 +178,18 @@ nav > div div {
   margin: auto;
 }
 
+nav > div div .info {
+  width: fit-content;
+  height: fit-content;
+  background: red;
+  background: radial-gradient(#161616, transparent);
+  position: absolute;
+  padding: 20px;
+  top: 50px;
+  right: 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+
 nav > div a {
   text-decoration: none;
   color: white;
