@@ -360,3 +360,22 @@ async function start() {
 }
 
 start()
+
+
+
+
+// TOGGLE MENU
+function toggleEmailMenu() {
+  var contact = $('nav div .contact');
+  $('nav .contact').on('click', function() {
+    $('nav .contact .info').toggleClass('show');
+  })
+}
+
+
+
+
+// WINDOW ON LOAD
+window.onload = function() {
+  toggleEmailMenu();
+}
