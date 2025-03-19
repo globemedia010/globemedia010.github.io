@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; URL='https://drive.google.com/drive/folders/1_OP-yoSSbVivkLFdwpTD3rbdizJr1Wr4'" />
 
-    		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X6S99MBS45"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6S99MBS45"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X6S99MBS45');
 
-  gtag('config', 'G-X6S99MBS45');
-</script>
+    // Delay redirect for 500ms to allow tracking
+    setTimeout(function() {
+      window.location.href = "https://drive.google.com/drive/folders/1_OP-yoSSbVivkLFdwpTD3rbdizJr1Wr4";
+    }, 500);
+    </script>
 </head>
 <body>
     <p>If you are not redirected, <a href="https://drive.google.com/drive/folders/1_OP-yoSSbVivkLFdwpTD3rbdizJr1Wr4">click here</a>.</p>
