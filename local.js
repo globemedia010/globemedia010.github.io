@@ -4,21 +4,21 @@ const data = [
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/IMG_6878.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/M1925/Prime%20Screen%20%2B%20Focus%20Panels%20-%20A1.JPEG'
     },
     {
         place:'',
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/IMG_7057.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/M1925/Prime%20Screen%20%2B%20Focus%20Panels%20-%20A3.JPEG'
     },
     {
         place:'',
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/IMG_6184.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/M1925/Prime%20Screen%20%2B%20Focus%20Panels%20-%20A5.JPEG'
     },
     {
         place:'',
