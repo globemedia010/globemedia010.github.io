@@ -39,7 +39,7 @@ const data = [
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/Aug1925/15.jpeg'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/Aug1925/15.jpg'
     },
 ]
 
