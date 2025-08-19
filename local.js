@@ -4,42 +4,42 @@ const data = [
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/M1925/Prime%20Screen%20%2B%20Focus%20Panels%20-%20A1.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/Aug1925/1.jpeg'
     },
     {
         place:'',
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/M1925/Prime%20Screen%20%2B%20Focus%20Panels%20-%20A3.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/Aug1925/5.jpeg'
     },
     {
         place:'',
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/M1925/Prime%20Screen%20%2B%20Focus%20Panels%20-%20A5.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/Aug1925/13.jpeg'
     },
     {
         place:'',
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/IMG_3795.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/Aug1925/12.jpeg'
     },
     {
         place:'',
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/IMG_0141.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/Aug1925/7.jpeg'
     },
     {
         place:'',
         title:'',
         title2:'',
         description:'',
-        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/IMG_0128.JPEG'
+        image:'https://raw.githubusercontent.com/globemedia010/globemedia010.github.io/refs/heads/main/Images/Screen/Aug1925/15.jpeg'
     },
 ]
 
